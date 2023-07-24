@@ -1,0 +1,40 @@
+{
+  "name": "@segment/analytics-consent-tools",
+  "version": "0.0.3",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist/",
+    "src/",
+    "!**/__tests__/**",
+    "!*.tsbuildinfo"
+  ],
+  "scripts": {
+    "test": "yarn jest",
+    "lint": "yarn concurrently 'yarn:eslint .' 'yarn:tsc --noEmit'",
+    "build": "rm -rf dist && yarn concurrently 'yarn:build:*'",
+    "build...": "yarn run -T turbo run build --filter=@segment/analytics-consent-wrapper-onetrust",
+    "build:esm": "yarn tsc -p tsconfig.build.json",
+    "build:cjs": "yarn tsc -p tsconfig.build.json --outDir ./dist/cjs --module commonjs",
+    "watch": "yarn build:esm --watch",
+    "watch:test": "yarn test --watch",
+    "tsc": "yarn run -T tsc",
+    "eslint": "yarn run -T eslint",
+    "concurrently": "yarn run -T concurrently --raw",
+    "jest": "yarn run -T jest"
+  },
+  "devDependencies": {
+    "@internal/config": "workspace:^",
+    "@internal/test-helpers": "workspace:^",
+    "@segment/analytics-next": "workspace:^"
+  },
+  "packageManager": "yarn@3.4.1",
+  "license": "MIT",
+  "repository": {
+    "directory": "packages/consent/consent-tools",
+    "type": "git",
+    "url": "https://github.com/segmentio/analytics-next"
+  }
+}

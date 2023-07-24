@@ -1,6 +1,6 @@
 {
   "name": "@segment/analytics-node",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/types/index.d.ts",
@@ -42,7 +42,8 @@
   },
   "devDependencies": {
     "@internal/config": "0.0.0",
-    "@types/node": "^16"
+    "@types/node": "^16",
+    "axios": "^1.4.0"
   },
   "packageManager": "yarn@3.4.1"
 }
