@@ -45,6 +45,7 @@ analytics.load({
 ```
 
 ## Snippet users (window.analytics)
+### Note: This assumes a project that can consume the library via es6 imports, using a like Webpack.
 
 1. Delete the `analytics.load()` line from the snippet
 
@@ -69,6 +70,10 @@ window.analytics.load('<MY_WRITE_KEY')
 ## Settings / Options / Configuration
 
 See the complete list of settings in the **[Settings interface](src/types/settings.ts)**
+
+## Special Requirements
+
+- For npm users, this library expects a version of `@segment/analytics-next` >= **1.53.1**. Note: If your library depends on this library, you should have the appropriate peer dependency declaration. See our `package.json` for an example.
 
 ## Development
 
