@@ -3471,7 +3471,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@segment/analytics-consent-tools@0.2.0, @segment/analytics-consent-tools@workspace:^, @segment/analytics-consent-tools@workspace:packages/consent/consent-tools":
+"@segment/analytics-consent-tools@0.2.1, @segment/analytics-consent-tools@workspace:^, @segment/analytics-consent-tools@workspace:packages/consent/consent-tools":
   version: 0.0.0-use.local
   resolution: "@segment/analytics-consent-tools@workspace:packages/consent/consent-tools"
   dependencies:
@@ -3492,7 +3492,7 @@ __metadata:
   dependencies:
     "@internal/config-webpack": "workspace:^"
     "@internal/test-helpers": "workspace:^"
-    "@segment/analytics-consent-tools": 0.2.0
+    "@segment/analytics-consent-tools": 0.2.1
   peerDependencies:
     "@segment/analytics-next": ">=1.53.1"
   peerDependenciesMeta:
@@ -3518,7 +3518,7 @@ __metadata:
     "@internal/config": 0.0.0
     "@lukeed/uuid": ^2.0.0
     "@segment/analytics-browser-actions-braze": ^1.3.0
-    "@segment/analytics-core": 1.3.1
+    "@segment/analytics-core": 1.3.2
     "@segment/analytics.js-integration": ^3.3.3
     "@segment/analytics.js-integration-amplitude": ^3.3.3
     "@segment/analytics.js-video-plugins": ^0.2.1
@@ -3574,7 +3574,7 @@ __metadata:
   dependencies:
     "@internal/config": 0.0.0
     "@lukeed/uuid": ^2.0.0
-    "@segment/analytics-core": 1.3.1
+    "@segment/analytics-core": 1.3.2
     "@types/node": ^16
     axios: ^1.4.0
     buffer: ^6.0.3
